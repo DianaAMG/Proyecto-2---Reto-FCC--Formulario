@@ -10,6 +10,7 @@ body {
     background-color: #FBE3EE;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 main {
@@ -43,13 +44,13 @@ form {
 }
 
 label {
-    text-align:left ;
+    text-align: left;
     font-size: 20px;
     color: #9E5E74;
     font-family: inter;
 }
 
-.controls{
+.controls {
     width: 80%;
     margin-bottom: 15px;
     border: 1px solid #FBE3EE;
@@ -67,12 +68,12 @@ label {
     background-color: #FCFF81;
     color: #9E5E74;
     font-size: 15px;
- 
+
 }
 
 .buttons:hover {
     cursor: pointer;
-    box-shadow:#9E5E74;
+    box-shadow: #9E5E74;
     border: #9E5E74;
 }
 
@@ -93,9 +94,13 @@ h1 {
 
 #banner {
     background-image: url(./img/lazo\ rosa.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 110%;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-width: 250px;
 }
 
 .circulo {
@@ -106,10 +111,11 @@ h1 {
     display: flex;
 }
 
-.figuras{
+.figuras {
     padding: 5px;
     display: flex;
 }
+
 .rectangulo {
     width: 55%;
     height: auto;
@@ -120,20 +126,44 @@ h1 {
 }
 
 .figure {
-    width: 90%; 
+    width: 50%;
+    height: 60px;
     background-color: #FCFF81;
     border-radius: 10px;
     margin-bottom: 10%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-self: flex-end;
-    font-size: 25px;
     font-family: inter;
     color: #9E5E74;
 }
 
+.figure h2 {
+    font-family: inter;
+    color: #9E5E74;
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
 
+.titulo {
+    font-size: 36px;
+    color: #9E5E74;
+    margin: 0;
+    font-family: inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    align-self: flex-end;
+}
 
-
-
-
+.titulo p {
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    text-align: center;
+}

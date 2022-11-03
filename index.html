@@ -20,13 +20,15 @@
                 <form action="">
 
                     <label for="name">Nombre :</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" class="controls" name="name" required placeholder="Ingrese su Nombre">
 
                     <label for="lastname">Apellido :</label>
-                    <input type="text" id="lastname" name="lastname" required>
+                    <input type="text" id="lastname" class="controls" name="lastname" required
+                        placeholder="Ingrese su Apellido">
 
-                    <label>Edad:
-                        <input list="ages" name="ages" /></label>
+                    <label>Edad: </label>
+                    <input list="ages" name="ages" class="controls" placeholder="Ingrese su rango de Edad" > </input>
+
                     <datalist id="ages">
                         <option value="10 años a 15 años">
                         <option value="16 años a 25 años">
@@ -34,6 +36,42 @@
                         <option value="36 años a 50 años">
                         <option value="Más de 50 años">
                     </datalist>
+
+                    <label>Identificación de genero: </label>
+                    <input list="gender" name="gender" class="controls" placeholder="Seleccione una opcion" > </input>
+
+                    <datalist id="gender">
+                        <option value="Masculino">
+                        <option value="Femenino">
+                        <option value="LGTBI">
+                        <option value="LGTBIQ+">
+                        <option value="Otro">
+                    </datalist>
+
+
+                    <label>Temas a tratar:</label>
+                    <div id="theme">
+                        <input type="checkbox" id="cbox1" value="cbox1"> Tratamiento </input>
+                        <input type="checkbox" id="cbox1" value="cbox2"> Cuidados</input>
+                        <input type="checkbox" id="cbox1" value="cbox3"> Prevención</input>
+                        <input type="checkbox" id="cbox1" value="cbox4"> Causas</input>
+                    </div>
+
+                    <label>Tipo de participación:</label>
+                    <input list="Type" name="Type" class="controls" placeholder="Seleccione una opcion"></input">
+
+                    <datalist id="Type">
+                        <option value="Presencial">
+                        <option value="Vitual">
+                    </datalist>
+
+                    <label>Sugerencias:</label>
+                    <textarea name="comentarios" class="controls" rows="5" cols="30"></textarea>
+
+
+
+                    <input class="buttons" type="submit"> </input>    
+
 
                 </form>
 

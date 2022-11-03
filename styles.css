@@ -3,7 +3,11 @@ Practica reto2 fcc
 */
 
 /* Así inserto una fuente llamandola desde una url */
-@import url(https://fonts.googleapis.com/css?family=Outfit);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+*{
+    
+}
 
 body {
     background-color: #FBE3EE;
@@ -36,5 +40,40 @@ main section {
 .formulario {
     width: 400px;
     height: 100%;
-    background-color: rgb(133, 133, 133);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 90%
+}
+
+label {
+    text-align:left ;
+    font-size: 24px;
+    color: #9E5E74;
+    
+}
+
+.controls{
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #FBE3EE;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #FBE3EE;
+}
+
+.buttons {
+    width: 85%;
+    margin-bottom: 15px;
+    border: 1px solid #FCFF81;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color: #FCFF81;
+}
+
+.buttons:hover {
+    cursor: pointer;
 }

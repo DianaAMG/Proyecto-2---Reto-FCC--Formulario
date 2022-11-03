@@ -5,9 +5,6 @@ Practica reto2 fcc
 /* Así inserto una fuente llamandola desde una url */
 @import url(https://fonts.googleapis.com/css?family=Inter);
 
-*{
-    
-}
 
 body {
     background-color: #FBE3EE;
@@ -19,7 +16,6 @@ main {
     display: flex;
     width: 100vw;
     height: 100vh;
-    
 }
 
 main section {
@@ -33,9 +29,6 @@ main section {
     justify-content: center;
 }
 
-#banner {
-    background-color: #ececec;
-}
 
 .formulario {
     width: 400px;
@@ -51,9 +44,9 @@ form {
 
 label {
     text-align:left ;
-    font-size: 24px;
+    font-size: 20px;
     color: #9E5E74;
-    
+    font-family: inter;
 }
 
 .controls{
@@ -72,8 +65,75 @@ label {
     border-radius: 5px;
     padding: 10px 10px;
     background-color: #FCFF81;
+    color: #9E5E74;
+    font-size: 15px;
+ 
 }
 
 .buttons:hover {
     cursor: pointer;
+    box-shadow:#9E5E74;
+    border: #9E5E74;
 }
+
+
+#theme {
+    border: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #9E5E74;
+}
+
+h1 {
+    font-size: 36px;
+    color: #9E5E74;
+    margin: 0;
+    font-family: inter;
+}
+
+#banner {
+    background-image: url(./img/lazo\ rosa.jpg);
+    background-repeat:no-repeat;
+    background-size: 110%;
+    display: flex;
+}
+
+.circulo {
+    width: 55px;
+    height: 55px;
+    background-color: #FCFF81;
+    border-radius: 50px;
+    display: flex;
+}
+
+.figuras{
+    padding: 5px;
+    display: flex;
+}
+.rectangulo {
+    width: 55%;
+    height: auto;
+    background-color: #FCFF81;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.figure {
+    width: 90%; 
+    background-color: #FCFF81;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content:center;
+    align-self: flex-end;
+    font-size: 25px;
+    font-family: inter;
+    color: #9E5E74;
+}
+
+
+
+
+
+
